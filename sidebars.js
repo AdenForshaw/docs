@@ -105,12 +105,12 @@ const sidebars = {
         {
           type: 'link',
           href: 'https://gitlab.com/tezos/tezos/-/tree/master/etherlink',
-          label: 'Etherlink source code',
+          label: 'Source code',
         },
         {
           type: 'link',
           href: 'https://gitlab.com/groups/tezos/-/issues/?sort=created\_date\&state=opened\&search=EVM%20\&first\_page\_size=20',
-          label: 'Etherlink pull requests',
+          label: 'Pull requests',
         },
       ],
     },
