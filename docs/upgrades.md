@@ -11,7 +11,7 @@ For more information, see [Etherlink Mainnet Beta: Paving the Way to Launch](htt
 
 ## First kernel upgrade
 
-The first upgrade to the Etherlink kernel includes support for the `debug_traceTransaction` and `debug_traceCall` RPC endpoints.
+The first upgrade to the Etherlink kernel includes updates and improvements to Etherlink's support for EVM endpoints.
 For more information, see [The First Regular Upgrade for Etherlink: One Step Closer to Launch](https://medium.com/etherlink/the-first-regular-upgrade-for-etherlink-one-step-closer-to-launch-6176b2136eaf).
 
 ## Bifröst upgrade
