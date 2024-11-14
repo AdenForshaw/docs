@@ -96,6 +96,12 @@ const sidebars = {
       label: 'Track Progress',
       collapsed: false,
       items: [
+        'upgrades',
+        {
+          type: 'link',
+          label: 'Changelog',
+          href: 'https://gitlab.com/tezos/tezos/-/blob/master/etherlink/CHANGES_KERNEL.md',
+        },
         {
           type: 'link',
           href: 'https://gitlab.com/tezos/tezos/-/tree/master/etherlink',
@@ -115,11 +121,6 @@ const sidebars = {
       items: [
         'resources/etherlink-further-reading',
         'resources/scaling-on-tezos',
-        {
-          type: 'link',
-          label: 'Changelog',
-          href: 'https://gitlab.com/tezos/tezos/-/blob/master/etherlink/CHANGES_KERNEL.md',
-        },
       ],
     },
   ],
