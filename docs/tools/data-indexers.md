@@ -13,3 +13,12 @@ For information on indexing contracts with The Graph, see [Indexing Etherlink co
 [Subsquid](https://subsquid.io/) is a peer-to-peer network to quickly batch, query and aggregate on-chain and off-chain data.
 
 Learn how to use their SDK with this [guide](https://docs.subsquid.io/sdk/how-to-start/).
+
+## Subquery
+
+[Subquery indexer](https://www.subquery.network/indexer) is an open-source indexer that supports Etherlink, along with many other networks.
+
+For examples of using Subquery with Etherlink, see these sample projects:
+
+- Mainnet: https://github.com/subquery/ethereum-subql-starter/tree/main/Etherlink%20Mainnet/etherlink-mainnet-etherlink-starter
+- Testnet: https://github.com/subquery/ethereum-subql-starter/tree/main/Etherlink/etherlink-testnet-starter
