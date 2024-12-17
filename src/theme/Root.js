@@ -7,15 +7,14 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 // Create a client
 const queryClient = new QueryClient();
 
-const {
-  siteConfig: {customFields},
-} = useDocusaurusContext();
-
-// Root component to wrap the entire application
+// Create Root component with proper context usage
 export default function Root({ children }) {
+  const {siteConfig} = useDocusaurusContext();
+  const clientId = siteConfig.customFields.THIRDWEB_CLIENT_ID;
+
   return (
     <QueryClientProvider client={queryClient}>
-      <ThirdwebProvider clientId={customFields.THIRDWEB_CLIENT_ID}>
+      <ThirdwebProvider clientId={clientId}>
         {children}
         <ReactQueryDevtools initialIsOpen={false} />
       </ThirdwebProvider>
