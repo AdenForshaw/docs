@@ -1,7 +1,10 @@
+
+
 import { ConnectButton, lightTheme } from 'thirdweb/react';
 import { inAppWallet, createWallet } from "thirdweb/wallets";
 import { defineChain } from "thirdweb/chains";
-import client from '@site/src/components/ThirdwebClient';
+import { createThirdwebClient } from 'thirdweb';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const customTheme = lightTheme({
   colors: {
@@ -67,6 +70,10 @@ const wallets = [
 ];
 
 export default function WalletConnectButton({ network, title }) {
+
+  const {siteConfig} = useDocusaurusContext()
+
+  const client = createThirdwebClient({ clientId: siteConfig.customFields.THIRDWEB_CLIENT_ID});
 
   const activeChain = network === "mainnet" ? mainnet : testnet;
 
